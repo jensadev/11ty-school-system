@@ -1,7 +1,7 @@
 {
-  "name": "11ty-sass-skeleton",
+  "name": "11ty-school-system",
   "version": "1.4.0",
-  "description": "Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.",
+  "description": "My design system for making school/work related project webs.",
   "main": "index.html",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
@@ -9,8 +9,8 @@
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy"
+    "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy"
   },
   "repository": {
     "type": "git",
