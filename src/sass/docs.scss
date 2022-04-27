@@ -4,7 +4,7 @@
     padding: 0;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
     li {
         aspect-ratio: 1;
         display: grid;

@@ -1,0 +1,421 @@
+---
+title: Color Token Contrast
+---
+
+> The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
+
+## color-magenta
+  - `color-on-magenta`
+  - `color-granit-light`
+
+## color-on-magenta
+  - `color-magenta`
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint`
+  - `color-on-turkosmint-light`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-magenta-light
+  - `color-on-magenta-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-dark`
+
+## color-on-magenta-light
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-on-kol-light`
+
+## color-magenta-dark
+  - `color-on-magenta`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-on-magenta-dark
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-ultraviolett
+  - `color-on-magenta`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-on-ultraviolett
+  - `color-on-magenta-light`
+  - `color-ultraviolett`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-ultraviolett-light
+  - `color-on-magenta`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-on-ultraviolett-light
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-ultraviolett-dark
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-on-ultraviolett-dark`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-on-ultramarin-dark`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol`
+  - `color-on-kol-light`
+
+## color-on-ultraviolett-dark
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin-dark`
+  - `color-kol-dark`
+
+## color-turkosmint
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-on-turkosmint
+  - `color-on-magenta`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-turkosmint-light
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint`
+  - `color-on-turkosmint-light`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-on-turkosmint-light
+  - `color-on-magenta`
+  - `color-turkosmint-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-turkosmint-dark
+  - `color-on-turkosmint-dark`
+
+## color-on-turkosmint-dark
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-on-ultraviolett-dark`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-turkosmint-dark`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-on-ultramarin-dark`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol`
+  - `color-on-kol-light`
+  - `color-on-kol-dark`
+
+## color-ultramarin
+  - `color-on-magenta`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-on-kol-light`
+
+## color-on-ultramarin
+  - `color-on-magenta-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-dark`
+
+## color-ultramarin-light
+  - `color-on-magenta`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-on-ultramarin-light
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-ultramarin-dark
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-on-ultraviolett-dark`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-on-ultramarin-dark`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol`
+  - `color-on-kol-light`
+
+## color-on-ultramarin-dark
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin-dark`
+  - `color-kol-dark`
+
+## color-granit
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint`
+  - `color-on-turkosmint-light`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-on-granit
+  - `color-on-magenta`
+  - `color-granit`
+  - `color-granit-light`
+
+## color-granit-light
+  - `color-magenta`
+  - `color-on-magenta-light`
+  - `color-magenta-dark`
+  - `color-ultraviolett`
+  - `color-ultraviolett-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint`
+  - `color-on-turkosmint-light`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-light`
+  - `color-ultramarin-dark`
+  - `color-on-granit`
+  - `color-on-granit-light`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-on-granit-light
+  - `color-granit-light`
+
+## color-granit-dark
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-dark`
+
+## color-on-granit-dark
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol-light`
+
+## color-kol
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol`
+  - `color-on-kol-light`
+
+## color-on-kol
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin-dark`
+  - `color-kol`
+  - `color-kol-dark`
+
+## color-kol-light
+  - `color-on-magenta`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin-light`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-on-kol-light`
+
+## color-on-kol-light
+  - `color-on-magenta-light`
+  - `color-ultraviolett-dark`
+  - `color-on-turkosmint-dark`
+  - `color-ultramarin`
+  - `color-ultramarin-dark`
+  - `color-on-granit-dark`
+  - `color-kol`
+  - `color-kol-light`
+  - `color-kol-dark`
+
+## color-kol-dark
+  - `color-on-magenta`
+  - `color-magenta-light`
+  - `color-on-magenta-dark`
+  - `color-on-ultraviolett`
+  - `color-on-ultraviolett-light`
+  - `color-on-ultraviolett-dark`
+  - `color-turkosmint`
+  - `color-turkosmint-light`
+  - `color-on-ultramarin`
+  - `color-on-ultramarin-light`
+  - `color-on-ultramarin-dark`
+  - `color-granit`
+  - `color-granit-light`
+  - `color-granit-dark`
+  - `color-on-kol`
+  - `color-on-kol-light`
+  - `color-on-kol-dark`
+
+## color-on-kol-dark
+  - `color-on-turkosmint-dark`
+  - `color-kol-dark`

@@ -1,0 +1,121 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in src/_data/colorTokens.js
+ */
+
+$color-magenta: #DD0890 !default;
+$color-on-magenta: #FFFAFE !default;
+$color-magenta-light: #F953BD !default;
+$color-on-magenta-light: #5A0B3E !default;
+$color-magenta-dark: #850556 !default;
+$color-on-magenta-dark: #DF9CC6 !default;
+$color-ultraviolett: #4B0082 !default;
+$color-on-ultraviolett: #B585D8 !default;
+$color-ultraviolett-light: #6D00BD !default;
+$color-on-ultraviolett-light: #D8A6FC !default;
+$color-ultraviolett-dark: #2D004E !default;
+$color-on-ultraviolett-dark: #9E6FC1 !default;
+$color-turkosmint: #0DE1EC !default;
+$color-on-turkosmint: #7F398E !default;
+$color-turkosmint-light: #72F1F7 !default;
+$color-on-turkosmint-light: #206C70 !default;
+$color-turkosmint-dark: #08878E !default;
+$color-on-turkosmint-dark: #060F07 !default;
+$color-ultramarin: #200C9C !default;
+$color-on-ultramarin: #988CE6 !default;
+$color-ultramarin-light: #2E11E2 !default;
+$color-on-ultramarin-light: #B9ABFF !default;
+$color-ultramarin-dark: #13075E !default;
+$color-on-ultramarin-dark: #8379C5 !default;
+$color-granit: #F0F0F0 !default;
+$color-on-granit: #6D6D6D !default;
+$color-granit-light: #FFFFFF !default;
+$color-on-granit-light: #767676 !default;
+$color-granit-dark: #909090 !default;
+$color-on-granit-dark: #292929 !default;
+$color-kol: #222222 !default;
+$color-on-kol: #898989 !default;
+$color-kol-light: #313131 !default;
+$color-on-kol-light: #989898 !default;
+$color-kol-dark: #141414 !default;
+$color-on-kol-dark: #7E7E7E !default;
+
+$base-color-tokens: ("magenta", "magenta-light", "magenta-dark", "ultraviolett", "ultraviolett-light", "ultraviolett-dark", "turkosmint", "turkosmint-light", "turkosmint-dark", "ultramarin", "ultramarin-light", "ultramarin-dark", "granit", "granit-light", "granit-dark", "kol", "kol-light", "kol-dark");
+
+$color-tokens: (
+  "color-magenta": $color-magenta,
+  "color-on-magenta": $color-on-magenta,
+  "color-magenta-light": $color-magenta-light,
+  "color-on-magenta-light": $color-on-magenta-light,
+  "color-magenta-dark": $color-magenta-dark,
+  "color-on-magenta-dark": $color-on-magenta-dark,
+  "color-ultraviolett": $color-ultraviolett,
+  "color-on-ultraviolett": $color-on-ultraviolett,
+  "color-ultraviolett-light": $color-ultraviolett-light,
+  "color-on-ultraviolett-light": $color-on-ultraviolett-light,
+  "color-ultraviolett-dark": $color-ultraviolett-dark,
+  "color-on-ultraviolett-dark": $color-on-ultraviolett-dark,
+  "color-turkosmint": $color-turkosmint,
+  "color-on-turkosmint": $color-on-turkosmint,
+  "color-turkosmint-light": $color-turkosmint-light,
+  "color-on-turkosmint-light": $color-on-turkosmint-light,
+  "color-turkosmint-dark": $color-turkosmint-dark,
+  "color-on-turkosmint-dark": $color-on-turkosmint-dark,
+  "color-ultramarin": $color-ultramarin,
+  "color-on-ultramarin": $color-on-ultramarin,
+  "color-ultramarin-light": $color-ultramarin-light,
+  "color-on-ultramarin-light": $color-on-ultramarin-light,
+  "color-ultramarin-dark": $color-ultramarin-dark,
+  "color-on-ultramarin-dark": $color-on-ultramarin-dark,
+  "color-granit": $color-granit,
+  "color-on-granit": $color-on-granit,
+  "color-granit-light": $color-granit-light,
+  "color-on-granit-light": $color-on-granit-light,
+  "color-granit-dark": $color-granit-dark,
+  "color-on-granit-dark": $color-on-granit-dark,
+  "color-kol": $color-kol,
+  "color-on-kol": $color-on-kol,
+  "color-kol-light": $color-kol-light,
+  "color-on-kol-light": $color-on-kol-light,
+  "color-kol-dark": $color-kol-dark,
+  "color-on-kol-dark": $color-on-kol-dark
+) !default;
+
+@mixin color-tokens() {
+  --color-magenta: #{$color-magenta};
+  --color-on-magenta: #{$color-on-magenta};
+  --color-magenta-light: #{$color-magenta-light};
+  --color-on-magenta-light: #{$color-on-magenta-light};
+  --color-magenta-dark: #{$color-magenta-dark};
+  --color-on-magenta-dark: #{$color-on-magenta-dark};
+  --color-ultraviolett: #{$color-ultraviolett};
+  --color-on-ultraviolett: #{$color-on-ultraviolett};
+  --color-ultraviolett-light: #{$color-ultraviolett-light};
+  --color-on-ultraviolett-light: #{$color-on-ultraviolett-light};
+  --color-ultraviolett-dark: #{$color-ultraviolett-dark};
+  --color-on-ultraviolett-dark: #{$color-on-ultraviolett-dark};
+  --color-turkosmint: #{$color-turkosmint};
+  --color-on-turkosmint: #{$color-on-turkosmint};
+  --color-turkosmint-light: #{$color-turkosmint-light};
+  --color-on-turkosmint-light: #{$color-on-turkosmint-light};
+  --color-turkosmint-dark: #{$color-turkosmint-dark};
+  --color-on-turkosmint-dark: #{$color-on-turkosmint-dark};
+  --color-ultramarin: #{$color-ultramarin};
+  --color-on-ultramarin: #{$color-on-ultramarin};
+  --color-ultramarin-light: #{$color-ultramarin-light};
+  --color-on-ultramarin-light: #{$color-on-ultramarin-light};
+  --color-ultramarin-dark: #{$color-ultramarin-dark};
+  --color-on-ultramarin-dark: #{$color-on-ultramarin-dark};
+  --color-granit: #{$color-granit};
+  --color-on-granit: #{$color-on-granit};
+  --color-granit-light: #{$color-granit-light};
+  --color-on-granit-light: #{$color-on-granit-light};
+  --color-granit-dark: #{$color-granit-dark};
+  --color-on-granit-dark: #{$color-on-granit-dark};
+  --color-kol: #{$color-kol};
+  --color-on-kol: #{$color-on-kol};
+  --color-kol-light: #{$color-kol-light};
+  --color-on-kol-light: #{$color-on-kol-light};
+  --color-kol-dark: #{$color-kol-dark};
+  --color-on-kol-dark: #{$color-on-kol-dark};
+}

@@ -1,5 +1,12 @@
 ---
 title: Colors
 ---
-
-Hej
+<link rel="stylesheet" href="{{ '/css/docs.css' | url }}" />
+<ul class="swatches">
+    {% for token in colorTokens %}
+    <li class="background-{{ token.name }}">{{ token.name }}
+        <br>
+        {{ token.color }}
+    </li>
+    {% endfor %}
+</ul>
