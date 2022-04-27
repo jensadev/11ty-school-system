@@ -1,0 +1,72 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:math";
+
+@function create($color, $prefix: "") {
+    $h: hue($color);
+    $s: saturation($color);
+    $l: lightness($color);
+
+    $temp: ();
+    $num: 900;
+    @for $i from 1 to 10 {
+        $temp: map.set($temp, #{$prefix + $num}, hsl($h, $s, $l * $i));
+        $num: $num - 100;
+    }
+    @return $temp;
+}
+
+$color-tokens: (
+    'magenta': #dd0890,
+    'ultraviolett': #4b0082,
+    'turkosmint': #0de1ec,
+    'ultramarin': #200c9c,
+    'granit': #f0f0f0,
+    'kol': #222222
+);
+
+$color-variants: ();
+
+@each $key, $val in  $color-tokens {
+    $variants: (
+        #{$key}-light: color.scale($val, $whiteness: 45%, $blackness: 0%),
+        #{$key}-dark: color.scale($val, $whiteness: 0%, $blackness: 40%),
+    );
+    $color-variants: map.merge($color-variants, $variants);
+}
+
+$color-tokens: map.merge($color-tokens, $color-variants);
+
+@debug $color-tokens;
+
+$color-primary-200: map.get($color-tokens, 'magenta') !default;
+$color-primary-100: map.get($color-tokens, 'magenta-light') !default;
+$color-primary-300: map.get($color-tokens, 'magenta-dark') !default;
+$color-secondary-200: map.get($color-tokens, 'ultraviolett') !default;
+$color-secondary-100: map.get($color-tokens, 'ultraviolett-light') !default;
+$color-secondary-300: map.get($color-tokens, 'ultraviolett-dark') !default;
+$color-light-200: map.get($color-tokens, 'granit') !default;
+$color-light-100: map.get($color-tokens, 'granit-light') !default;
+$color-light-300: map.get($color-tokens, 'granit-dark') !default;
+$color-dark-200: map.get($color-tokens, 'kol') !default;
+$color-dark-100: map.get($color-tokens, 'kol-light') !default;
+$color-dark-300: map.get($color-tokens, 'kol-dark') !default;
+
+// $base-color-tokens: ("primary", "secondary", "foreground", "background");
+
+@mixin color-tokens() {
+    --color-primary: #{$color-primary-200};
+    --color-primary-100: #{$color-primary-100};
+    --color-primary-300: #{$color-primary-300};
+    --color-secondary: #{$color-secondary-200};
+    --color-secondary-100: #{$color-secondary-100};
+    --color-secondary-300: #{$color-secondary-300};
+    --color-light: #{$color-light-200};
+    --color-light-100: #{$color-light-100};
+    --color-light-300: #{$color-light-300};
+    --color-dark: #{$color-dark-200};
+    --color-dark-100: #{$color-dark-100};
+    --color-dark-300: #{$color-dark-300};
+    --color-fg: #{$color-dark-200};
+    --color-bg: #{$color-light-200};
+}
