@@ -101,6 +101,7 @@ title: Color Token Contrast
   - `color-on-ultraviolett-light`
   - `color-turkosmint`
   - `color-turkosmint-light`
+  - `color-on-ultramarin-light`
   - `color-granit`
   - `color-granit-light`
 
@@ -112,7 +113,6 @@ title: Color Token Contrast
   - `color-ultraviolett-dark`
   - `color-on-turkosmint-dark`
   - `color-ultramarin`
-  - `color-ultramarin-light`
   - `color-ultramarin-dark`
   - `color-on-granit-dark`
   - `color-kol`
@@ -237,7 +237,6 @@ title: Color Token Contrast
 
 ## color-ultramarin-light
   - `color-on-magenta`
-  - `color-on-ultraviolett-light`
   - `color-turkosmint`
   - `color-turkosmint-light`
   - `color-on-ultramarin-light`
@@ -248,6 +247,7 @@ title: Color Token Contrast
   - `color-on-magenta-light`
   - `color-magenta-dark`
   - `color-ultraviolett`
+  - `color-ultraviolett-light`
   - `color-ultraviolett-dark`
   - `color-on-turkosmint-dark`
   - `color-ultramarin`
