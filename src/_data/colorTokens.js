@@ -24,15 +24,15 @@ for (const [key, val] of Object.entries(config)) {
     const color = Color(val);
     colorTokens[key] = color.hex();
     let light = color.desaturate(0.2).lighten(0.45).hex();
-    console.log(key, Color(light).isDark());
+    // console.log(key, Color(light).isDark());
     if (Color(light).isDark()) {
-        light = color.lighten(0.45).hex();
+        light = color.desaturate(0.5).lighten(0.75).hex();
     }
     colorTokens[`${key}_light`] = light;
     colorTokens[`${key}_dark`] = Color(val).darken(0.4).hex();
 }
 
-console.log(colorTokens)
+// console.log(colorTokens)
 
 let exportTokens = [];
 
