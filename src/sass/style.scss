@@ -4,6 +4,6 @@
 @use "components";
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-fg);
+    color: var(--color-foreground);
+    background-color: var(--color-background);
 }

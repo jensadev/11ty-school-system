@@ -1,0 +1,49 @@
+@use "sass:map";
+
+.navbar {
+    font-size: var(--font-size-h4);
+    font-weight: 500;
+    a {
+        text-decoration: none;
+        color: var(--color-primary);
+        &:hover {
+            color: var(--color-primary-dark);
+            text-decoration: none;
+        }
+    }
+    &__toggle {
+        border: none;
+        background-color: transparent;
+
+        .material-icons {
+            font-size: var(--font-size-h4);
+            line-height: inherit;
+        }
+
+        @media (min-width: 80ch) {
+            display: none;
+        }
+    }
+
+    &__collapse {
+        @media (max-width: 80ch) {
+            display: none;
+        }
+        &-show {
+            display: block;
+            width: 100%;
+          }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        justify-content: left;
+        flex-wrap: wrap;
+        @media (max-width: 80ch) {
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 80ch) {
+        flex-direction: column;
+    }
+    &__item {
+        padding-left: 1rem;
+        @media (max-width: 80ch) {
+            padding-left: 0;
+        }
+    }
+}
