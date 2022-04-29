@@ -1,0 +1,12 @@
+---
+title: 11ty design 
+permalink: /docs/
+---
+
+{% extends "layouts/docs.njk" %}
+
+<ul>
+    {% for page in collections.docs %}
+    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+    {% endfor %}
+</ul>

@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "color-tokens": "a11y-color-tokens --outputDirPath='src/sass' --colorTokensPath='src/_data/colorTokens.js' --compatibilityDocsPath='src/__docs/'",
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css src/_includes/partials:public/css",
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",

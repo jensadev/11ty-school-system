@@ -1,7 +1,3 @@
----
-title: 11ty design system
----
-
 {% extends "layouts/base.njk" %}
 
 {% block navbar %}
@@ -24,11 +20,6 @@ title: 11ty design system
 
 {% block content %}
 <main class="container mbs">
-    <ul>
-        {% for page in collections.docs %}
-        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-        {% endfor %}
-    </ul>
+    {{ content | safe }}
 </main>
-
 {% endblock %}

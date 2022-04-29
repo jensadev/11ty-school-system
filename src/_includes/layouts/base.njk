@@ -13,18 +13,24 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet" />
         <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+        {% block head %}
+        {% endblock %}
     </head>
     <body>
+        {% block navbar %}
         {%- from 'partials/navbar/macro.njk' import navbar -%}
         {{ navbar({ 
             brand: site.navigation.brand,
             menu: site.navigation.menu
          }) }}
+        {% endblock %}
+        {% block header %}
         <header class="container">
             <h1>{{ title }}</h1>
         </header>
-        <main class="container mbs">
-            {{ content | safe }}
-        </main>
+        {% endblock %}
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
     </body>
 </html>

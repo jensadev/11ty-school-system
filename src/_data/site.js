@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Webbutveckling 1-2',
     lang: 'sv',
-    path: process.env.NODE_ENV === 'production' ? '/wu-exempel' : '',
+    path: process.env.NODE_ENV === 'prod' ? '/wu-exempel' : '',
     navigation: {
         brand: {
             title: 'Webbutveckling 1-2',

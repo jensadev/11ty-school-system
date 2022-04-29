@@ -1,8 +1,6 @@
 @use "sass:map";
 
 .navbar {
-    font-size: var(--font-size-h4);
-    font-weight: 500;
     a {
         text-decoration: none;
         color: var(--color-primary);
@@ -14,11 +12,6 @@
     &__toggle {
         border: none;
         background-color: transparent;
-
-        .material-icons {
-            font-size: var(--font-size-h4);
-            line-height: inherit;
-        }
 
         @media (min-width: 80ch) {
             display: none;
@@ -36,14 +29,28 @@
     }
 
     &__inner {
+        --container-view: 100%;
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding: 1rem 0;
 
         justify-content: left;
         flex-wrap: wrap;
         @media (max-width: 80ch) {
             justify-content: space-between;
         }
+    }
+    
+    &__brand {
+        text-decoration: none;
+        img, span {
+            color: var(--color-primary);
+            vertical-align: middle;
+        }
+    }
+
+    .material-icons {
+        font-size: var(--font-size-h3);
+        line-height: inherit;
     }
 }

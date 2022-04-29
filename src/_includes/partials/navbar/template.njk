@@ -1,7 +1,7 @@
 <nav class="navbar" aria-label="Primary">
     <div class="navbar__inner container">
         {% if props.brand %}
-        <a class="navbar__brand" href="{{ site.path }}/">
+        <a class="navbar__brand" href="{{ props.brand.url | url }}">
             {% if props.brand.icon %}
                 <span class="material-icons"> {{ props.brand.icon }} </span>
             {% elif props.brand.text %}
@@ -36,13 +36,13 @@
                                         endif
                                         %}
                                     "
-                                    href="{{ site.path + child.url }}"
+                                    href="{{ child.url | url }}"
                                     >{{ child.title }}</a
                                 >
                             </li>
                             {% endfor %}
                         {% elif item.collection %}
-                            {% for child in collections[item.collection] %}
+                            {% for child in item.collection %}
                             <li class="dropdown__item">
                                 <a
                                     class="
@@ -56,7 +56,7 @@
                                         endif
                                         %}
                                     "
-                                    href="{{ site.path + child.url }}"
+                                    href="{{ child.url | url}}"
                                     >{{ child.data.title }}</a
                                 >
                             </li>

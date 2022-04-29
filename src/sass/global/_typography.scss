@@ -107,6 +107,7 @@ $level-size: $type-base-size;
 @debug $type-styles;
 
 :root {
+    --font-size-base: $type-base-size;
     @each $type, $size in $type-styles {
         --font-size-#{$type}: #{$size};
     }

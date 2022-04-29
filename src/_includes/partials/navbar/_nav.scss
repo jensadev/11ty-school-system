@@ -5,6 +5,9 @@
         flex-direction: column;
     }
     &__item {
+        font-size: var(--font-size-h4);
+        font-weight: 500;
+        
         padding-left: 1rem;
         @media (max-width: 80ch) {
             padding-left: 0;
