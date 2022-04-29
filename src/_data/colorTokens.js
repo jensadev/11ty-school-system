@@ -10,28 +10,35 @@ const Color = require('color');
 // };
 
 const config = {
-    magenta: '#dd0890',
-    ultraviolett: '#4b0082',
-    turkosmint: '#0de1ec',
-    ultramarin: '#200c9c',
-    granit: '#f0f0f0',
-    kol: '#222222',
+    magenta: 'rgb(221, 8, 144)',
+    ultraviolett: 'rgb(75, 0, 130)',
+    turkosmint: 'rgb(13, 225, 236)',
+    ultramarin: 'rgb(32, 12, 156)',
+    granit: 'rgb(240, 240, 240)',
+    kol: 'rgb(34, 34, 34)',
 };
 
 let colorTokens = {};
 
 for (const [key, val] of Object.entries(config)) {
-    colorTokens[key] = Color(val).hex();
-    colorTokens[`${key}_light`] = Color(val).lighten(0.45).hex();
+    const color = Color(val);
+    colorTokens[key] = color.hex();
+    let light = color.desaturate(0.2).lighten(0.45).hex();
+    console.log(key, Color(light).isDark());
+    if (Color(light).isDark()) {
+        light = color.lighten(0.45).hex();
+    }
+    colorTokens[`${key}_light`] = light;
     colorTokens[`${key}_dark`] = Color(val).darken(0.4).hex();
 }
+
+console.log(colorTokens)
 
 let exportTokens = [];
 
 for (const [key, val] of Object.entries(colorTokens)) {
-    let name = key.replace(/_/g, '-');
     exportTokens.push({
-        name: name,
+        name: key.replace(/_/g, '-'),
         color: val,
     });
 }
