@@ -29,6 +29,7 @@
         {% block navigation %}
             {{ navbar({ 
                 brand: site.navigation.brand,
+                active: page.url,
                 menu: site.navigation.menu
             }) }}
         {% endblock %}

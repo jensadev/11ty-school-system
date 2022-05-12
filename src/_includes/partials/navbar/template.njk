@@ -17,7 +17,11 @@
                 {% for item in props.menu.items %}
                 {% if item.dropdown %}
                 <li class="nav__item dropdown">
-                    <a class="nav__link nav__link--dropdown-toggle" href="#" role="button"
+                    <a class="nav__link nav__link--dropdown-toggle
+                    {% if props.active === item.url %}
+                    nav__link--active
+                    {% endif %}"
+                    " href="#" role="button"
                         >{{ item.title }}</a
                     >
                     <ul class="nav dropdown__content">
@@ -25,7 +29,7 @@
                             {% for child in item.children %}
                             <li class="dropdown__item">
                                 <a
-                                    class="nav__link{% if page.url === child.url %} nav__link--active{% endif %}"
+                                    class="nav__link"
                                     href="{{ child.url | url }}"
                                     >{{ child.title }}</a
                                 >
@@ -35,7 +39,7 @@
                             {% for child in item.collection %}
                             <li class="dropdown__item">
                                 <a
-                                class="nav__link{% if page.url === child.url %} nav__link--active{% endif %}"
+                                    class="nav__link"
                                     href="{{ child.url | url}}"
                                     >{{ child.data.title }}</a
                                 >
@@ -48,19 +52,11 @@
                 </li>
                 {% else %}
                     <li class="nav__item">
-                        <a
-                            class="
-                                nav__link{%
-                                if
-                                page.url
-                                ===
-                                '/'
-                                %}
-                                active{%
-                                endif
-                                %}
-                            "
-                            href="{{ site.path }}/{{ item.url if item.url }}"
+                        <a class="nav__link
+                        {% if props.active === item.url %}
+                        nav__link--active
+                        {% endif %}"
+                            href="/{{ item.url if item.url }}"
                             >{{ item.title }}</a
                         >
                     </li>

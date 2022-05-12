@@ -11,18 +11,16 @@
 
 {{ navbar({
     brand: site.navigation.brand,
+    active: page.url,
     menu: {
         items: [
             { title: 'Start' },
-            { title: 'Docs', dropdown: true, collection: menudata }
+            { title: 'Docs', dropdown: true, url: '/docs/', collection: menudata }
         ]
     }
 }) }}
 {% endblock %}
 
 {% block content %}
-<p>
-    docs layout
-</p>
     {{ content | safe }}
 {% endblock %}

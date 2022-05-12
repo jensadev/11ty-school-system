@@ -1,6 +1,5 @@
 ---
 title: Typography
-layout: "layouts/docs"
 ---
 
 # This is a headline size 1

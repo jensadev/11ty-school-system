@@ -11,6 +11,7 @@ module.exports = {
             items: [
                 {
                     title: 'Start',
+                    url: '/'
                 },
                 {
                     title: 'Dropdown',
