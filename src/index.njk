@@ -2,33 +2,9 @@
 title: 11ty design system
 ---
 
+
 {% extends "layouts/base.njk" %}
 
-{% block navbar %}
-
-    {%- from 'partials/navbar/macro.njk' import navbar -%}
-
-    {% set menudata = collections.docs %}
-
-    {{ navbar({
-        brand: site.navigation.brand,
-        menu: {
-            items: [
-                { title: 'Start' },
-                {title: 'Docs', dropdown: true, collection: menudata }
-            ]
-        }
-    }) }}
-
-{% endblock %}
-
 {% block content %}
-<main class="container mbs">
-    <ul>
-        {% for page in collections.docs %}
-        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-        {% endfor %}
-    </ul>
-</main>
-
+<p>Base page for design system. See <a href="/docs">Docs</a>.</p>
 {% endblock %}

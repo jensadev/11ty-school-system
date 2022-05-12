@@ -1,3 +1,6 @@
+{%- from 'partials/skip-link/macro.njk' import skipLink -%}
+{%- from 'partials/navbar/macro.njk' import navbar -%}
+{%- from 'partials/header/macro.njk' import header -%}
 <!DOCTYPE html>
 <html lang="sv">
     <head>
@@ -13,24 +16,35 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet" />
         <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-        {% block head %}
-        {% endblock %}
+        {% block head %}{% endblock %}
     </head>
     <body>
-        {% block navbar %}
-        {%- from 'partials/navbar/macro.njk' import navbar -%}
-        {{ navbar({ 
-            brand: site.navigation.brand,
-            menu: site.navigation.menu
-         }) }}
+        {% block skipLink %}
+            {{ skipLink ({ 
+                text: 'Gå till sidans innehåll',
+                url: '#main-content' 
+            }) }}
         {% endblock %}
+
+        {% block navigation %}
+            {{ navbar({ 
+                brand: site.navigation.brand,
+                menu: site.navigation.menu
+            }) }}
+        {% endblock %}
+
         {% block header %}
-        <header class="container">
-            <h1>{{ title }}</h1>
-        </header>
+            {{ header({
+                title: title
+            }) }}
         {% endblock %}
-        {% block content %}
-        {{ content | safe }}
+
+        {% block main %}
+        <main id="main-content" class="container mbs">
+            {% block content %}{% endblock %}
+        </main>
         {% endblock %}
+
+        {% block footer %}{% endblock %}
     </body>
 </html>

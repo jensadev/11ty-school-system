@@ -1,5 +1,6 @@
 ---
 title: Typography
+layout: "layouts/docs"
 ---
 
 # This is a headline size 1
@@ -12,3 +13,4 @@ Lorem ipsum dolor sit, amet [consectetur adipisicing elit](#). Labore iste tempo
 <p class="lead">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
 </p>
+

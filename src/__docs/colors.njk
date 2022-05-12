@@ -1,7 +1,9 @@
 ---
 title: Colors
 ---
-<link rel="stylesheet" href="{{ '/css/docs.css' | url }}" />
+
+{% extends "layouts/docs.njk" %}
+
 <ul class="swatches">
     {% for token in colorTokens %}
     <li class="background-{{ token.name }}">{{ token.name }}

@@ -5,8 +5,10 @@ permalink: /docs/
 
 {% extends "layouts/docs.njk" %}
 
+{% block content %}
 <ul>
     {% for page in collections.docs %}
     <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
     {% endfor %}
 </ul>
+{% endblock %}

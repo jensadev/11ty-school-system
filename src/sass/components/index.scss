@@ -1,1 +1,3 @@
-@use "../../_includes/partials/navbar";
+@forward "../../_includes/partials/navbar";
+@forward "../../_includes/partials/header";
+@forward "../../_includes/partials/skip-link";

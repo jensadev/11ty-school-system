@@ -1,25 +1,28 @@
+{%- from 'partials/navbar/macro.njk' import navbar -%}
+
 {% extends "layouts/base.njk" %}
 
-{% block navbar %}
+{% block head %}
+<link rel="stylesheet" href="{{ '/css/docs.css' | url }}" />
+{% endblock %}
 
-    {%- from 'partials/navbar/macro.njk' import navbar -%}
+{% block navigation %}
+{% set menudata = collections.docs %}
 
-    {% set menudata = collections.docs %}
-
-    {{ navbar({
-        brand: site.navigation.brand,
-        menu: {
-            items: [
-                { title: 'Start' },
-                {title: 'Docs', dropdown: true, collection: menudata }
-            ]
-        }
-    }) }}
-
+{{ navbar({
+    brand: site.navigation.brand,
+    menu: {
+        items: [
+            { title: 'Start' },
+            { title: 'Docs', dropdown: true, collection: menudata }
+        ]
+    }
+}) }}
 {% endblock %}
 
 {% block content %}
-<main class="container mbs">
+<p>
+    docs layout
+</p>
     {{ content | safe }}
-</main>
 {% endblock %}
